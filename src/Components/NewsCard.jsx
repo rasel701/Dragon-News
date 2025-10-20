@@ -1,10 +1,12 @@
 import React from "react";
 import { FaEye, FaStar } from "react-icons/fa";
 import { BsShare, BsBookmark } from "react-icons/bs";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
   const {
     title,
+    id,
     author,
     published_date,
     thumbnail_url,
@@ -58,10 +60,13 @@ const NewsCard = ({ news }) => {
 
         <p className="text-gray-600 leading-relaxed">
           {details.length > 200 ? details.slice(0, 200) + "..." : details}
-          <span className="text-blue-600 font-medium cursor-pointer hover:underline">
+          <Link
+            to={`/news-details/${id}`}
+            className="text-blue-600 font-medium cursor-pointer hover:underline"
+          >
             {" "}
             Read More
-          </span>
+          </Link>
         </p>
 
         <div className="flex flex-wrap gap-2 mt-4">
