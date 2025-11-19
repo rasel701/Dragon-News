@@ -1,16 +1,89 @@
-# React + Vite
+![logo](https://github.com/rasel701/Dragon-News/blob/main/dragon-news-app-picture.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# 🐉 Dragon News
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Dragon News** is a modern **React.js frontend** for a news platform, providing users with the latest news, categorized sections, and a smooth reading experience.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌐 Live Demo
+Drogon-news-app (https://whimsical-babka-16d026.netlify.app/category/1)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- **Latest News Feed** — Display the most recent news articles.
+- **News Categories** — Browse news by category.
+- **Top Headlines Marquee** — Smooth scrolling top headlines using **react-fast-marquee**.
+- **User Authentication** — Optional login/register functionality using **Firebase Authentication**.
+- **Responsive UI** — Works on mobile, tablet, and desktop screens.
+- **Alerts & Notifications** — Interactive notifications using **react-toastify**.
+- **Loading Indicators** — Smooth spinners using **react-spinners**.
+- **Routing** — Navigate seamlessly using **React Router v7**.
+
+---
+
+## 🛠️ Tech Stack & NPM Packages
+
+| React | Tailwind CSS | DaisyUI | Firebase |
+|-------|--------------|---------|---------|
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="45"/> | <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="45"/> | <img src="https://raw.githubusercontent.com/saadeghi/daisyui/master/assets/logo.svg" width="45"/> | <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" width="45"/> |
+
+Other Dependencies:  
+- `react-fast-marquee`  
+- `react-icons`  
+- `date-fns`  
+- `react-toastify`  
+- `react-spinners`  
+- `@tailwindcss/vite`
+
+---
+
+---
+
+## ⚙️ Installation & Setup
+
+1️⃣ Clone the repository
+```bash
+git clone https://github.com/rasel701/Dragon-News.git
+```
+
+2️⃣ Install dependencies
+```bash
+npm install
+```
+
+3️⃣ Create a `.env` file (if Firebase is used for authentication):
+```
+VITE_APIKEY=your_api_key
+VITE_AUTHDOMAIN=your_project.firebaseapp.com
+VITE_PROJECTID=your_project_id
+VITE_STORAGEBUCKET=your_project.appspot.com
+VITE_MESSAGINGSENDERID=your_sender_id
+VITE_APPID=your_app_id
+```
+
+4️⃣ Start the development server
+```bash
+npm run dev
+```
+
+---
+
+## 🔐 Authentication (Optional)
+
+- Firebase Authentication can be used to login or register users.
+- Protect sensitive routes using Firebase ID token verification.
+
+---
+
+## 👨‍💻 Developer
+
+**Rasel Mia**  
+📧 Email: rasel708211@gmail.com
+
+---
+
+⭐ _If you like this project, please star the repository!_
